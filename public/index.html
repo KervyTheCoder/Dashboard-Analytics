@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Analytics</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo">📊 Dashboard Analytics</div>
+      <div class="nav-links" id="nav-links">
+        <a href="#" data-page="dashboard">Dashboard</a>
+        <a href="#" data-page="data">Données</a>
+        <a href="#" data-page="reports">Rapports</a>
+      </div>
+      <div class="user-menu">
+        <span id="user-info"></span>
+        <button id="logout-btn" class="btn">Déconnexion</button>
+      </div>
+    </nav>
+
+    <div id="auth-section" class="container">
+      <!-- Formulaires de connexion/inscription injectés par JS -->
+    </div>
+
+    <main id="main-content" class="container" style="display:none;">
+      <div id="page-content"></div>
+    </main>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
